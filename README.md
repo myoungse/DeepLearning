@@ -61,3 +61,8 @@ forward_neuralnet이 정의되지 않았다며 NameError가 뜬다.
 
 아까 나왔던 오류가 뜨지 않는다. run_train을 print할 때 forward_neuralnet을 불러오는데에 있어 문제가 생긴듯하다.
 
+---
+
+<img width="758" alt="a" src="https://github.com/myoungse/DeepLearning/assets/106461144/8673973c-3a4b-41f4-bf67-4c6ce9c8f605">
+
+원래의 코드로 되돌리고 디버깅을 하지 않고 실행한 결과이다.
