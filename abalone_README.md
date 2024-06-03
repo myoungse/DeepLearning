@@ -66,3 +66,5 @@ forward_neuralnet이 정의되지 않았다며 NameError가 뜬다.
 <img width="758" alt="a" src="https://github.com/myoungse/DeepLearning/assets/106461144/8673973c-3a4b-41f4-bf67-4c6ce9c8f605">
 
 원래의 코드로 되돌리고 디버깅을 하지 않고 실행한 결과이다.
+
+@ 코드를 살펴보다가 원래의 코드에서 추가했던 부분을 발견했다! 
