@@ -67,4 +67,42 @@ forward_neuralnet이 정의되지 않았다며 NameError가 뜬다.
 
 원래의 코드로 되돌리고 디버깅을 하지 않고 실행한 결과이다.
 
-@ 코드를 살펴보다가 원래의 코드에서 추가했던 부분을 발견했다! 
+---
+코드를 살펴보다가 원래의 코드에서 추가했던 부분을 발견했다! 아래의 코드1은 원래 강의자료에 첨부되어 있던 코드이고, 코드2는 코드1과 다르게 import time 밑에 한 줄이 추가된 코드이다.
+
+#코드1
+
+```
+import numpy as np
+import csv
+import time
+
+np.random.seed(1234)
+def randomize(): np.random.seed(time.time())
+```
+
+#코드2
+
+```
+import numpy as np
+import csv
+import time
+
+from abalone import loss, accuracy
+
+np.random.seed(1234)
+def randomize(): np.random.seed(time.time())
+```
+
+아래 사진은 강의자료에 첨부되어 있던 코드를 그대로 실행시켰을 때의 결과이다.
+
+<img width="757" alt="q" src="https://github.com/myoungse/DeepLearning/assets/106461144/f21ffc58-d01b-4fe0-a9be-46ddeee477f0">
+
+다음 사진은 원래의 코드에 위에서 설명한 코드를 한 줄 추가한 것이다.
+
+<img width="762" alt="w" src="https://github.com/myoungse/DeepLearning/assets/106461144/b3457dd4-450a-4090-b15b-e40f07367f74">
+
+초반에 했던 디버깅 과정에서 원래의 코드에서 디버깅을 걸어서 돌렸지만 loss와 accuracy 결과가 나오는 것에 문제가 생겨 넣었던 코드이다.
+
+---
+
